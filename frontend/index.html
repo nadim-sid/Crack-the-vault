@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crack the Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Crack the Vault</h1>
+        <p>Test your password security</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Password Strength Checker</h2>
+
+            <label for="password">Enter a test password:</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+            >
+
+            <button id="checkButton">
+                Check Password
+            </button>
+
+            <h3>Strength Results</h3>
+
+            <p id="basicScore"></p>
+            <p id="smartScore"></p>
+            <p id="warnings"></p>
+            <p id="suggestions"></p>
+        </section>
+
+        <section>
+            <h2>Password Attack Simulator</h2>
+
+            <label for="attackType">Choose attack type:</label>
+
+            <select id="attackType">
+                <option value="dictionary">Dictionary</option>
+                <option value="pattern">Pattern-Based</option>
+                <option value="bruteforce">Brute-Force</option>
+            </select>
+
+            <button id="attackButton">
+                Run Simulation
+            </button>
+
+            <div id="attackResults"></div>
+        </section>
+
+        <section>
+            <h2>Hashing Comparison</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Average Time (ms)</th>
+                        <th>Salt Used</th>
+                    </tr>
+                </thead>
+
+                <tbody id="hashResults"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
