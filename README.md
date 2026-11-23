@@ -2,7 +2,7 @@
 
 CSC 38000 —  Final Project
 
-**Team:** Nadim Siddique, Mashiyat Jahin, Hsaung Soe, Mohammed
+**Team:** Nadim Siddique, Mashiyat Jahin, Hsaung Soe, Mohammed Islam
 
 ## Project Overview
 
